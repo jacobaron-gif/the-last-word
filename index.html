@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#080b14">
+<meta name="color-scheme" content="dark">
+<title>The Last Word</title>
+<meta name="description" content="A short mystery for one evening, on a small island with a dark lighthouse. Plays in your phone's browser.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jacobaron-gif.github.io/the-last-word/">
+<meta property="og:title" content="The Last Word">
+<meta property="og:description" content="A short mystery for one evening, on a small island with a dark lighthouse. Plays in your phone's browser.">
+<meta property="og:image" content="https://jacobaron-gif.github.io/the-last-word/card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A white lighthouse on a dark island under a full moon, with the title The Last Word">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="style.css?v=1">
+  <link rel="icon" href="data:,">
+</head>
+<body>
+<div id="app">
+  <div id="stage">
+    <canvas id="art" aria-hidden="true"></canvas>
+    <h1 id="loc-title"></h1>
+  </div>
+  <div id="lower">
+    <main id="panel">
+      <div id="desc" class="prose"></div>
+      <div id="acts" class="btns"></div>
+      <div id="exits" class="btns exits"></div>
+    </main>
+    <section id="sheet" hidden aria-live="polite">
+      <div id="sheet-body"></div>
+      <div id="sheet-foot"><button id="sheet-close" class="btn primary">Done</button></div>
+    </section>
+  </div>
+  <nav id="bar">
+    <button id="btn-notebook" class="barbtn"><span class="ico">✎</span> Notebook <span id="nb-dot" hidden></span></button>
+    <button id="btn-menu" class="barbtn" aria-label="Menu">⋯</button>
+  </nav>
+</div>
+<div id="overlay" hidden></div>
+<noscript><p style="padding:2em;color:#eee">This game needs JavaScript.</p></noscript>
+<script src="content.js?v=1"></script>
+<script src="engine.js?v=1"></script>
+<script src="save.js?v=1"></script>
+<script src="art.js?v=1"></script>
+<script src="ui.js?v=1b"></script>
+</body>
+</html>
